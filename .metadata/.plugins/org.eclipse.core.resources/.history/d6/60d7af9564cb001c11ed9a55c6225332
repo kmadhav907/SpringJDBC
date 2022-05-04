@@ -1,0 +1,5 @@
+package com.database.demo.Demo.dao;
+
+public interface EmployeeDao {
+
+}
