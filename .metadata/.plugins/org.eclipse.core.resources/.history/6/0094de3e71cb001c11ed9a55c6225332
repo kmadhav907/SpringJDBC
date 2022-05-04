@@ -1,7 +1,6 @@
 package com.database.demo.Demo.employee.dao;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.database.demo.Demo.employee.dto.Employee;
 

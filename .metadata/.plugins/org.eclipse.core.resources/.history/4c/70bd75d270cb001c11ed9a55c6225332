@@ -1,8 +1,5 @@
 package com.database.demo.Demo.employee.implement;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.database.demo.Demo.employee.dao.EmployeeDAO;
@@ -43,13 +40,6 @@ public class EmployeeImplemnt implements EmployeeDAO {
 		EmployeeRowMapper rowMapper = new EmployeeRowMapper();
 		Employee employee = jdbcTemplate.queryForObject(sql, rowMapper, id);
 		return employee;
-	}
-	@Override
-	public List<Employee> read() {
-		String sql = "select * from employee";
-		EmployeeRowMapper rowMapper = new EmployeeRowMapper();
-		List<Employee> employees = jdbcTemplate.query(sql, rowMapper);
-		return employees;
 	}
 
 }
